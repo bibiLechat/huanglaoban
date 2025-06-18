@@ -18,38 +18,40 @@ header.header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* 导航样式 */
+
+/* 导航样式：整体居中、按钮堆叠美观 */
 nav.nav {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;     /* 垂直排列按钮 */
+  align-items: center;        /* 水平居中 */
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .nav button {
   background-color: #f0f2f5;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
   color: #333;
   cursor: pointer;
+  margin: 0.4rem 0;
+  width: 220px;
+  text-align: left;
   transition: background-color 0.2s ease;
 }
 
 .nav button i {
-  margin-right: 0.4rem;
+  margin-right: 0.6rem;
+  color: #888;
 }
 
 .nav button:hover {
   background-color: #e2e6ea;
 }
+
 
 /* 内容主区域 */
 main {
