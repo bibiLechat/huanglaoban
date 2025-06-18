@@ -1,47 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Cat Notes</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cats and Their World</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>My Cat Notes</h1>
-    <p>A personal collection of cat care knowledge</p>
+  <header class="header">
+    <h1>Cats and Their World</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#food">Cat Food</a></li>
-      <li><a href="#litter">Cat Litter</a></li>
-      <li><a href="#health">Common Diseases</a></li>
-      <li><a href="#references">References</a></li>
-    </ul>
+  <nav class="nav">
+    <button onclick="showSection('supplies')">Cat Supplies</button>
+    <button onclick="showSection('health')">Cat Health</button>
+    <button onclick="showSection('behavior')">Cat Behavior</button>
+    <button onclick="showSection('references')">References</button>
   </nav>
 
-  <section id="food">
-    <h2>Cat Food</h2>
-    <p>Here I share my experiences with different types of cat food.</p>
-  </section>
+  <main>
+    <!-- Cat Supplies -->
+    <section id="supplies" class="content">
+      <h2>Cat Supplies</h2>
 
-  <section id="litter">
-    <h2>Cat Litter</h2>
-    <p>Pros and cons of various cat litter I've used.</p>
-  </section>
+      <div class="card">
+        <h3>猫粮（Cat Food）</h3>
+        <p>
+          猫粮是猫咪营养的主要来源。根据美国 AAFCO（饲料控制官员协会）制定的标准，合格的猫粮必须在营养成分上满足成猫或幼猫的最低营养需求。
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>营养素</th>
+              <th>AAFCO 成猫</th>
+              <th>AAFCO 幼猫</th>
+              <th>FEDIAF 成猫</th>
+              <th>FEDIAF 幼猫</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>蛋白质 (%)</td>
+              <td>&ge; 26%</td>
+              <td>&ge; 30%</td>
+              <td>&ge; 25%</td>
+              <td>&ge; 28%</td>
+            </tr>
+            <tr>
+              <td>脂肪 (%)</td>
+              <td>&ge; 9%</td>
+              <td>&ge; 9%</td>
+              <td>&ge; 10%</td>
+              <td>&ge; 11%</td>
+            </tr>
+            <tr>
+              <td>牛磺酸 (mg/kg)</td>
+              <td>&ge; 1000</td>
+              <td>&ge; 1500</td>
+              <td>&ge; 1000</td>
+              <td>&ge; 1500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <section id="health">
-    <h2>Common Diseases</h2>
-    <p>Notes on health issues I've encountered, and how I dealt with them.</p>
-  </section>
+      <div class="card">
+        <h3>猫砂（Cat Litter）</h3>
+        <p>
+          猫砂按材质可分为膨润土猫砂、水晶猫砂、豆腐猫砂、松木猫砂等。每种都有不同的吸水性、除臭性、粉尘程度。
+        </p>
+      </div>
 
-  <section id="references">
-    <h2>References</h2>
-    <ul>
-      <li><a href="https://www.catster.com/">Catster</a></li>
-      <li><a href="https://www.aspca.org/pet-care/cat-care">ASPCA Cat Care</a></li>
-    </ul>
-  </section>
+      <div class="card">
+        <h3>猫玩具（Cat Toys）</h3>
+        <p>
+          猫玩具不仅用于娱乐，更有助于猫咪缓解压力、锻炼身体、防止攻击性行为。
+        </p>
+      </div>
+    </section>
+
+    <!-- Cat Health -->
+    <section id="health" class="content">
+      <h2>Cat Health</h2>
+
+      <div class="card">
+        <h3>营养需求（Nutritional Requirements）</h3>
+        <p>
+          猫是完全的肉食性动物，必须从食物中获取以下营养素：牛磺酸、维生素A、精氨酸等。以下是营养推荐对比表：
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>营养素</th>
+              <th>AAFCO 成猫</th>
+              <th>AAFCO 幼猫</th>
+              <th>FEDIAF 成猫</th>
+              <th>FEDIAF 幼猫</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>蛋白质 (%)</td>
+              <td>&ge; 26%</td>
+              <td>&ge; 30%</td>
+              <td>&ge; 25%</td>
+              <td>&ge; 28%</td>
+            </tr>
+            <tr>
+              <td>脂肪 (%)</td>
+              <td>&ge; 9%</td>
+              <td>&ge; 9%</td>
+              <td>&ge; 10%</td>
+              <td>&ge; 11%</td>
+            </tr>
+            <tr>
+              <td>牛磺酸 (mg/kg)</td>
+              <td>&ge; 1000</td>
+              <td>&ge; 1500</td>
+              <td>&ge; 1000</td>
+              <td>&ge; 1500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>常见疾病与预防（Common Diseases & Prevention）</h3>
+        <p>
+          常见疾病包括猫瘟、猫疱疹、猫艾滋、尿结石、口炎、肾病等。
+        </p>
+        <div class="image-block">
+          <h4>猫口腔健康示意图</h4>
+          <img src="https://i.imgur.com/FyUXhEp.jpg" alt="猫口腔健康图" />
+        </div>
+        <div class="image-block">
+          <h4>猫疫苗接种流程图</h4>
+          <img src="https://i.imgur.com/wBKhEnY.png" alt="疫苗接种流程图" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cat Behavior -->
+    <section id="behavior" class="content">
+      <h2>Cat Behavior & Ethology</h2>
+      <div class="card">
+        <p>待添加内容</p>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="content">
+      <h2>References</h2>
+      <ul>
+        <li>AAFCO Official Guidelines</li>
+        <li>FEDIAF Nutritional Guidelines</li>
+        <li>Journal of Feline Medicine and Surgery</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("main section").forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    showSection('supplies');
+  </script>
+</body>
+</html>
+
 
   <footer>
     <p>Written by bibi · Last updated June 2025</p>
