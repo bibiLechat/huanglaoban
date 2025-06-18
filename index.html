@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cats and Their World</title>
+  <title>黄老板的花园</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header class="header">
-    <h1>Cats and Their World</h1>
+    <h1>黄老板的花园</h1>
   </header>
 
   <nav class="nav">
-    <button onclick="showSection('supplies')">Cat Supplies</button>
-    <button onclick="showSection('health')">Cat Health</button>
-    <button onclick="showSection('behavior')">Cat Behavior</button>
-    <button onclick="showSection('references')">References</button>
+    <button onclick="showSection('supplies')"><i class="fas fa-box"></i> 猫的用具</button>
+    <button onclick="showSection('health')"><i class="fas fa-heartbeat"></i> 猫的健康</button>
+    <button onclick="showSection('behavior')"><i class="fas fa-paw"></i> 猫的行为</button>
+    <button onclick="showSection('references')"><i class="fas fa-book"></i> 参考资料</button>
   </nav>
 
   <main>
-    <!-- Cat Supplies -->
+    <!-- 猫的用具 -->
     <section id="supplies" class="content">
-      <h2>Cat Supplies</h2>
-
+      <h2>猫的用具</h2>
       <div class="card">
-        <h3>猫粮（Cat Food）</h3>
+        <h3>猫粮</h3>
         <p>
           猫粮是猫咪营养的主要来源。根据美国 AAFCO（饲料控制官员协会）制定的标准，合格的猫粮必须在营养成分上满足成猫或幼猫的最低营养需求。
         </p>
@@ -65,26 +65,26 @@
       </div>
 
       <div class="card">
-        <h3>猫砂（Cat Litter）</h3>
+        <h3>猫砂</h3>
         <p>
           猫砂按材质可分为膨润土猫砂、水晶猫砂、豆腐猫砂、松木猫砂等。每种都有不同的吸水性、除臭性、粉尘程度。
         </p>
       </div>
 
       <div class="card">
-        <h3>猫玩具（Cat Toys）</h3>
+        <h3>猫玩具</h3>
         <p>
           猫玩具不仅用于娱乐，更有助于猫咪缓解压力、锻炼身体、防止攻击性行为。
         </p>
       </div>
     </section>
 
-    <!-- Cat Health -->
+    <!-- 猫的健康 -->
     <section id="health" class="content">
-      <h2>Cat Health</h2>
+      <h2>猫的健康</h2>
 
       <div class="card">
-        <h3>营养需求（Nutritional Requirements）</h3>
+        <h3>营养需求</h3>
         <p>
           猫是完全的肉食性动物，必须从食物中获取以下营养素：牛磺酸、维生素A、精氨酸等。以下是营养推荐对比表：
         </p>
@@ -125,7 +125,7 @@
       </div>
 
       <div class="card">
-        <h3>常见疾病与预防（Common Diseases & Prevention）</h3>
+        <h3>常见疾病与预防</h3>
         <p>
           常见疾病包括猫瘟、猫疱疹、猫艾滋、尿结石、口炎、肾病等。
         </p>
@@ -140,21 +140,21 @@
       </div>
     </section>
 
-    <!-- Cat Behavior -->
+    <!-- 猫的行为 -->
     <section id="behavior" class="content">
-      <h2>Cat Behavior & Ethology</h2>
+      <h2>猫的行为与行为学</h2>
       <div class="card">
         <p>待添加内容</p>
       </div>
     </section>
 
-    <!-- References -->
+    <!-- 参考资料 -->
     <section id="references" class="content">
-      <h2>References</h2>
+      <h2>参考资料</h2>
       <ul>
-        <li>AAFCO Official Guidelines</li>
-        <li>FEDIAF Nutritional Guidelines</li>
-        <li>Journal of Feline Medicine and Surgery</li>
+        <li>AAFCO 官方指南</li>
+        <li>FEDIAF 营养标准</li>
+        <li>《猫科动物医学与外科》期刊</li>
       </ul>
     </section>
   </main>
